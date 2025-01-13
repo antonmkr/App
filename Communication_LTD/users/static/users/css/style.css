@@ -1,0 +1,120 @@
+/* Global styles */
+
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif; /* Modern font */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Text in dark gray for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a2e; /* Dark blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #533e2d; /* Brown border for a classy touch */
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1a1a2e; /* Matches header */
+    border-top: 1px solid #533e2d; /* Thin brown border at top */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f4; /* Off-white for links */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover animation */
+}
+
+nav ul li a:hover {
+    background-color: #533e2d; /* Brown hover effect */
+    color: white; /* White text on hover */
+}
+
+/* Main content styles */
+main {
+    background-color: white;
+    color: #333;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a2e; /* Dark blue matches header */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 3px solid #533e2d; /* Brown border for consistency */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #533e2d; /* Brown background */
+    color: white; /* White text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover and press effects */
+}
+
+.btn:hover {
+    background-color: #402d20; /* Darker brown on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn:active {
+    background-color: #402d20; /* Same as hover */
+    transform: translateY(0); /* Reset lift when clicked */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+}

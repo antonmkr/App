@@ -1,0 +1,17 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+<h2>Client List</h2>
+
+<form method="GET">
+    <label for="search">Search Clients:</label>
+    <input type="text" id="search" name="search" placeholder="Enter client name">
+    <button type="submit" class="btn">Search</button>
+</form>
+
+<ul>
+    {% for client in clients %}
+        <li><strong>Name:</strong> {{ client.name }} - <strong>Email:</strong> {{ client.email }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -5,13 +5,13 @@
 
 <form method="GET">
     <label for="search">Search Clients:</label>
-    <input type="text" id="search" name="search" placeholder="Enter client name">
+    <input type="text" id="search" name="search" value="{{ search_query | safe }}" placeholder="Enter client name">
     <button type="submit" class="btn">Search</button>
 </form>
 
 <ul>
     {% for client in clients %}
-        <li><strong>Name:</strong> {{ client.name }} - <strong>Email:</strong> {{ client.email }}</li>
+        <li><strong>Name:</strong> {{ client.name | safe }} - <strong>Email:</strong> {{ client.email | safe }}</li>
     {% endfor %}
 </ul>
 {% endblock %}

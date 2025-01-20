@@ -3,6 +3,12 @@
 {% block content %}
 <h2>Dashboard</h2>
 
+    {% if message %}
+    <p style="color: green;">{{ message }}</p>
+{% endif %}
+
+
+
 <!-- Add classes to the buttons -->
 <a href="{% url 'add_client' %}" class="btn">Add Client</a>
 <a href="{% url 'client_list' %}" class="btn">View Clients</a>

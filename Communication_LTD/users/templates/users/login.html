@@ -4,10 +4,9 @@
 <h2>Login</h2>
 
 {% if success %}
-    <div style="color: green; font-weight: bold; margin-bottom: 15px;">
-        {{ success }}
-    </div>
+<p>{{ success|safe }}</p>
 {% endif %}
+
 
 {% if error %}
     <div style="color: red; font-weight: bold; margin-bottom: 15px;">
@@ -22,6 +21,9 @@
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
+
+    <p><a href="{% url 'forgot_password' %}">Forgot Password?</a></p>
+
 
     <button type="submit" class="btn">Login</button>
 </form>

@@ -1,0 +1,12 @@
+# Ignore virtual environment folder
+.venv/
+
+# Ignore system files
+*.pyc
+__pycache__/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Django migrations
+*.sqlite3

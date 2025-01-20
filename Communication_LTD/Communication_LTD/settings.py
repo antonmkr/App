@@ -113,4 +113,15 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'users/static')]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_FROM_EMAIL = 'communication.ltd001@gmail.com'  # כתובת המייל לשליחת טוקנים
+
+# הגדרות SMTP לשליחת מיילים דרך Gmail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # שרת ה-SMTP של Gmail
+EMAIL_PORT = 587  # פורט TLS
+EMAIL_USE_TLS = True  # השתמש ב-TLS לאבטחה
+EMAIL_HOST_USER = 'communication.ltd001@gmail.com'  # כתובת המייל שלך ב-Gmail
+EMAIL_HOST_PASSWORD = 'stjo bulq lmjd ikvw'  # סיסמת האפליקציה שיצרת
+DEFAULT_FROM_EMAIL = 'communication.ltd001@gmail.com'  # כתובת השולח שתופיע במיילים
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
